@@ -20,7 +20,7 @@ jobs:
           go version
           go test -v ./encryption
       - name: make
-        run: make
+        run: make build
         env:
           GOOS: ${{ matrix.goos }}
           GOARCH: ${{ matrix.goarch }} 
@@ -55,7 +55,7 @@ jobs:
           $env:GOARCH="386"
           go test -v ./encryption
       - name: make
-        run: make
+        run: make build
       - name: Packaging...
         run: tar czf nodeUpgrade-${{ matrix.goos }}-${{ matrix.goarch }}.tgz nodeUpgrade
       - name: Get version
