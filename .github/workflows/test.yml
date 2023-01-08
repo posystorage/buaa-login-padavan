@@ -16,7 +16,7 @@ jobs:
       - run: |
           go version
           go test -v ./encryption
-          export GOARCH=arm64
+          export GOARCH="mips32le"
           go test -v ./encryption
 
   unit-test-on-win:
