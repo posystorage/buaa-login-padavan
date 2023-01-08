@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/wangjq4214/buaa-login/encryption"
+	"github.com/posystorage/buaa-login-padavan/encryption"
 )
 
 var header = map[string]string{
